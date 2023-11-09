@@ -1,7 +1,7 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
 // import OurClasses from "@/scenes/ourClasses";
-import Benefits from "@/scenes/benefits";
+import Benefits from "@/scenes/welcome";
 import ContactUs from "@/scenes/contactUs";
 import Footer from "@/scenes/footer";
 import Conferences from "@/scenes/conferences";

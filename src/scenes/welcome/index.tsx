@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/about.webp";
-import Benefit from "./Benefit";
+// import Welcome from "./Welcome";
 
 const benefits: Array<BenefitType> = [
   {
@@ -42,11 +42,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Benefits = ({ setSelectedPage }: Props) => {
+const Welcome = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20 -mt-24">
+    <section id="welcome" className="mx-auto min-h-full w-5/6 py-20 -mt-24">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Welcome)}
       >
         {/* HEADER */}
         {/* <motion.div
@@ -171,4 +171,4 @@ const Benefits = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default Benefits;
+export default Welcome;
