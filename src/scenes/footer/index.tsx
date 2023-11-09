@@ -11,9 +11,7 @@ const Footer = () => {
             purus et arcu massa dictum condimentum. Augue scelerisque iaculis
             orci ut habitant laoreet. Iaculis tristique.
           </p>
-          <p>
-            © 2023 All Right Reserved – Designed and Developed by Tejender Upadhyay
-          </p>
+          <p>Copyright © 2024 UNIfied 2024 - All Rights Reserved.</p>
         </div>
         {/* <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Links</h4>
@@ -24,7 +22,8 @@ const Footer = () => {
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
           <p className="my-5">MNIT Jaipur</p>
-          <p>(+91)-1234567890</p>
+          <p>gsoni.mech@mnit.ac.in</p>
+          <p>(+91)-9549654559</p>
         </div>
       </div>
     </footer>

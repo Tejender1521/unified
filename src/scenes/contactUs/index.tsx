@@ -46,11 +46,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           <HText>
             <span className="text-primary-500">Contact Us</span> To Know More
           </HText>
-          <p className="my-5">
+          {/* <p className="my-5">
             Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
             sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
             adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* FORM AND IMAGE */}
@@ -69,8 +69,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             <form
               target="_blank"
               onSubmit={onSubmit}
-              // action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
-              action="https://formsubmit.co/code.tejender@gmail.com"
+              action="https://formsubmit.co/gsoni.mech@mnit.ac.in"
               method="POST"
             >
               <input

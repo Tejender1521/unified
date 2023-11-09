@@ -143,7 +143,7 @@ const Visa = ({ setSelectedPage }: Props) => {
                   
                   className="mt-5 rounded-lg bg-secondary-500 px-10 py-3 transition duration-500 hover:text-red-600"
                 >
-                  <a href="https://forms.gle/3hcsePc2qQuH4ZyZ8">Apply Now</a>
+                  <a target="_blank" href="https://forms.gle/3hcsePc2qQuH4ZyZ8">Apply Now</a>
                 </button>
               </div>
             </div>
