@@ -4,6 +4,7 @@ export enum SelectedPage {
   Conferences = "conferences",
   OurClasses = "ourclasses",
   ContactUs = "contactus",
+  Visa = "visa"
 }
 
 export interface BenefitType {

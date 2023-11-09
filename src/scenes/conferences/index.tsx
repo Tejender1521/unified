@@ -47,7 +47,7 @@ const Conferences = ({ setSelectedPage }: Props) => {
   return (
     <section id="conferences" className="mx-auto -mt-10 min-h-full w-5/6 py-20">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Conferences)}
       >
         {/* HEADER */}
         <motion.div
