@@ -43,11 +43,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Conferences = ({ setSelectedPage }: Props) => {
+const Conferences = () => {
   return (
     <section id="conferences" className="mx-auto -mt-10 min-h-full w-5/6 py-20">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Conferences)}
+      // onViewportEnter={() => setSelectedPage(SelectedPage.Conferences)}
       >
         {/* HEADER */}
         <motion.div
@@ -85,7 +85,7 @@ const Conferences = ({ setSelectedPage }: Props) => {
               icon={benefit.icon}
               title={benefit.title}
               description={benefit.description}
-              setSelectedPage={setSelectedPage}
+              // setSelectedPage={setSelectedPage}
             />
           ))}
         </motion.div>
@@ -123,40 +123,42 @@ const Conferences = ({ setSelectedPage }: Props) => {
             </div> */}
 
         {/* DESCRIPT */}
-        {/* <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ delay: 0.2, duration: 0.5 }}
-              variants={{
-                hidden: { opacity: 0, x: 50 },
-                visible: { opacity: 1, x: 0 },
-              }}
-            >
-              <p className="my-5">
-                On behalf of the United International Conference on Emerging
-                technologies of:
-                <br />
-                ● INTPART-UTFORSK Project on Cyber-physical Systems (Professor
-                Maneesh Singh, The Western Norway University of Applied
-                Sciences),
-                <br />
-                ● IncoME conference (Professor Jyoti Sinha, University of
-                Manchester),
-                <br />
-                ● TEPEN Conference (Professor Andrew Ball, University of
-                Huddersfield, UK and Professor Fulei Chu, Tsinghua University,
-                China)
-                <br />● DAMAS Conference (Professor Carol Featherston, Cardiff
-                University; Professor Huajiang Ouyang, University of Liverpool;
-                and Professor Anish Roy, Loughborough University)
-              </p>
-              <p className="mb-5">
-                It is our pleasure to invite you to the conference to be held
-                from 26th November to 28th November 2024 at the Malaviya
-                National Institute of Technology (MNIT), Jaipur, India.
-              </p>
-            </motion.div> */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: 50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
+          <p className="my-5">
+            Due to the shared interests, it seems sensible that we should
+            collaborate more closely by organising a single, large,
+            wide-coverage conference. The Malaviya National Institute of
+            Technology is delighted to be host this event at the historic and
+            culturally rich city of Jaipur, India.
+            <br />
+            <br />
+            The combined conference, which we are informally calling “UNIfied
+            2024” will bring together engineers, scientists and technologists,
+            researchers, developers, and practitioners who work in the area of:
+            <br />
+            1. Sensors and Measurement Systems
+            <br />
+            2. Condition Monitoring and Predictive Maintenance
+            <br />
+            3. Industrial Internet of Things (IIoT)
+            <br />
+            4. Cyber physical systems (CPS)
+            <br />
+            5. Artificial Intelligence / Machine Learning in Maintenance and
+            Production Environment
+            <br />
+            6. Related Government Policies
+          </p>
+        </motion.div>
 
         {/* BUTTON */}
         {/* <div className="relative mt-16">

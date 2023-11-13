@@ -9,7 +9,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Home = ({ setSelectedPage }: Props) => {
+const Home = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const flexBetween = "flex items-center justify-between";
 

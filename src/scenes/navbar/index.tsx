@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/mnitlogo.png";
-import Link from "./Link";
+// import Link from "./Link";
+import { Link } from "react-router-dom";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
@@ -12,16 +13,16 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = () => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  // const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
 
   return (
-    <nav>
+    <nav className="h-0">
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full bg-opacity-40 py-3 backdrop-blur-sm backdrop-filter`}
+        className={` ${flexBetween} fixed top-0 z-30 w-full bg-opacity-40 py-3 backdrop-blur-sm backdrop-filter`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
@@ -32,17 +33,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Link
+                  {/* <Link
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
-                  <Link
+                  /> */}
+                  <Link to="/">Home</Link>
+                  <Link to="/registration">Registration</Link>
+                  <Link to="/visa">Visa</Link>
+                  <Link to="/comingsoon">Submission</Link>
+                  <Link to="/comingsoon">Programme</Link>
+                  <Link to="/comingsoon">Commitees</Link>
+                  <Link to="/comingsoon">Keynotes</Link>
+                  <Link to="/comingsoon">Awards</Link>
+
+                  {/* <Link
                     page="Welcome"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
-                  <Link
+                  /> */}
+                  {/* <Link
                     page="Conferences"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
@@ -56,7 +66,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     page="Contact Us"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
-                  />
+                  /> */}
                 </div>
                 {/* <div className={`${flexBetween} gap-8`}>
                   <ActionButton setSelectedPage={setSelectedPage}>
@@ -88,12 +98,55 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
           {/* MENU ITEMS */}
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+            <Link to="/" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              Home
+            </Link>
             <Link
+              to="/registration"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Registration
+            </Link>
+            <Link to="/visa" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              Visa
+            </Link>
+            <Link
+              to="/comingsoon"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Submission
+            </Link>
+            <Link
+              to="/comingsoon"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Programme
+            </Link>
+            <Link
+              to="/comingsoon"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Commitees
+            </Link>
+            <Link
+              to="/comingsoon"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Keynotes
+            </Link>
+            <Link
+              to="/comingsoon"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Awards
+            </Link>
+
+            {/* <Link
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
-            <Link
+            /> */}
+            {/* <Link
               page="Welcome"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
@@ -112,7 +165,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               page="Contact Us"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
-            />
+            /> */}
           </div>
         </div>
       )}

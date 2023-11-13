@@ -39,10 +39,10 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Visa = ({ setSelectedPage }: Props) => {
+const Visa = () => {
   return (
-    <section id="visa" className="mx-auto -mt-24 min-h-full w-5/6 py-20">
-      <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Visa)}>
+    <section id="visa" className="mx-auto min-h-full w-5/6 py-20">
+      <motion.div >
         {/* HEADER */}
         {/* <motion.div
           className="md:my-5 md:w-3/5"

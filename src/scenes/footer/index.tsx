@@ -6,11 +6,16 @@ const Footer = () => {
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-10 basis-1/2 md:mt-0">
           <img alt="logo" src={Logo} className="h-24 rounded-lg" />
-          {/* <p className="my-5">
-            Lorem vitae ut augue auctor faucibus eget eget ut libero. Elementum
-            purus et arcu massa dictum condimentum. Augue scelerisque iaculis
-            orci ut habitant laoreet. Iaculis tristique.
-          </p> */}
+          <p className="my-5">
+            The Institute was jointly established in 1963 as Malaviya Regional
+            Engineering College Jaipur by the Government of India and the
+            Government of Rajasthan. Subsequently, on 26 June, 2002, the college
+            was given the status of National Institute of Technology. On 15
+            August 2007, it was recognized as the Institute of National
+            Importance through an Act of Parliament. The Institute is fully
+            funded by the Ministry of Education (Shiksha Mantralaya), Government
+            of India.
+          </p>
           <p>Copyright © 2024 UNIfied 2024 - All Rights Reserved.</p>
         </div>
         {/* <div className="mt-16 basis-1/4 md:mt-0">

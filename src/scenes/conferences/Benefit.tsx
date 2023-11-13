@@ -11,10 +11,10 @@ type Props = {
   icon: JSX.Element;
   title: string;
   description: string;
-  setSelectedPage: (value: SelectedPage) => void;
+  // setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
+const Benefit = ({ icon, title, description }: Props) => {
   return (
     <motion.div
       variants={childVariant}
@@ -30,7 +30,7 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
       <p className="my-3">{description}</p>
       <AnchorLink
         className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-        onClick={() => setSelectedPage(SelectedPage.ContactUs)}
+        // onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >
         <p>Learn More</p>

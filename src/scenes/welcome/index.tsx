@@ -42,11 +42,11 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Welcome = ({ setSelectedPage }: Props) => {
+const Welcome = () => {
   return (
     <section id="welcome" className="mx-auto min-h-full w-5/6 py-20 -mt-24">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.Welcome)}
+        // onViewportEnter={() => setSelectedPage(SelectedPage.Welcome)}
       >
         {/* HEADER */}
         {/* <motion.div
@@ -157,13 +157,13 @@ const Welcome = ({ setSelectedPage }: Props) => {
             </motion.div>
 
             {/* BUTTON */}
-            <div className="relative mt-16">
+            {/* <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                <ActionButton setSelectedPage={setSelectedPage}>
+                <button>
                   Join Now
-                </ActionButton>
+                </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>
