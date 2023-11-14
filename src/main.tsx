@@ -14,6 +14,7 @@ import {
 import Registration from './scenes/registration';
 import Scope from './scenes/scope';
 import Comingsoon from './scenes/comingsoon';
+import Commitees from './scenes/commitees';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration/>
+      },
+      {
+        path: "/commitees",
+        element: <Commitees/>
       },
       {
         path: "/comingsoon",

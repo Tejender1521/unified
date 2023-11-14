@@ -3,7 +3,7 @@ import React from "react";
 function Comingsoon() {
   return (
     <div className="flex h-screen items-center justify-center border-gray-100">
-      <p className="text text-5xl font-bold text-indigo-700">Comingsoon</p>
+      <p className="text text-5xl font-bold text-indigo-700">Coming Soon</p>
     </div>
   );
 }

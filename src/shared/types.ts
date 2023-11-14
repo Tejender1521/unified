@@ -13,6 +13,10 @@ export interface BenefitType {
   description: string;
 }
 
+export interface BenefitTypeWithLink extends BenefitType {
+  link: string;
+}
+
 export interface ClassType {
   name: string;
   description?: string;

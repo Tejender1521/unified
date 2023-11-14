@@ -43,7 +43,7 @@ const Navbar = () => {
                   <Link to="/visa">Visa</Link>
                   <Link to="/comingsoon">Submission</Link>
                   <Link to="/comingsoon">Programme</Link>
-                  <Link to="/comingsoon">Commitees</Link>
+                  <Link to="/commitees">Commitees</Link>
                   <Link to="/comingsoon">Keynotes</Link>
                   <Link to="/comingsoon">Awards</Link>
 
@@ -123,7 +123,7 @@ const Navbar = () => {
               Programme
             </Link>
             <Link
-              to="/comingsoon"
+              to="/commitees"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               Commitees
