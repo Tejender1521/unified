@@ -15,6 +15,11 @@ import Registration from './scenes/registration';
 import Scope from './scenes/scope';
 import Comingsoon from './scenes/comingsoon';
 import Commitees from './scenes/commitees';
+import Patron from './scenes/patron';
+import Conferencechair from './scenes/conferencechair';
+import Conferencecochair from './scenes/conferencecochair';
+import Advisorycommitee from './scenes/advisorycommitee';
+import Sponsor from './scenes/sponsor';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +45,26 @@ const router = createBrowserRouter([
       {
         path: "/comingsoon",
         element: <Comingsoon/>
+      },
+      {
+        path: "/patron",
+        element: <Patron/>
+      },
+      {
+        path: "/conferencechair",
+        element: <Conferencechair/>
+      },
+      {
+        path: "/conferencecochair",
+        element: <Conferencecochair/>
+      },
+      {
+        path: "/advisorycommitee",
+        element: <Advisorycommitee/>
+      },
+      {
+        path: "/sponsor",
+        element: <Sponsor/>
       }
     ]
   }

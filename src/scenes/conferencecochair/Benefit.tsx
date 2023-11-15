@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { Link } from "react-router-dom";
 // import Benefit from ".";
 const childVariant = {
-  hidden: { opacity: 1, scale: 0.9 },
+  hidden: { opacity: 0, scale: 0.9 },
   visible: { opacity: 1, scale: 1 },
 };
 
@@ -12,15 +12,13 @@ type Props = {
   icon: JSX.Element;
   title: string;
   description: string;
-  link: string;
-  // setSelectedPage: (value: SelectedPage) => void;
 };
 
-const Benefit = ({ icon, title, description, link }: Props) => {
+const Benefit = ({ icon, title, description}: Props) => {
   return (
     <motion.div
       variants={childVariant}
-      className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center md:h-80 md:w-56"
+      className="mt-5 rounded-md border-2 border-gray-100 px-5 py-16 text-center md:h-60 md:w-56"
     >
       <div className="mb-4 flex justify-center">
         <div className="rounded-full border-2 border-gray-100 bg-primary-100 p-4">
@@ -37,12 +35,9 @@ const Benefit = ({ icon, title, description, link }: Props) => {
       >
         <p>Learn More</p>
       </AnchorLink> */}
-      <Link
-        to={link}
-        className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
-      >
+      {/* <Link to={link} className="text-sm font-bold text-primary-500 underline hover:text-secondary-500">
         Learn More
-      </Link>
+      </Link> */}
     </motion.div>
   );
 };

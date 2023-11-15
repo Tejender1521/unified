@@ -42,7 +42,7 @@ type Props = {
 const Visa = () => {
   return (
     <section id="visa" className="mx-auto min-h-full w-5/6 py-20">
-      <motion.div >
+      <motion.div>
         {/* HEADER */}
         {/* <motion.div
           className="md:my-5 md:w-3/5"
@@ -140,10 +140,11 @@ const Visa = () => {
                 </Button> */}
                 <button
                   type="submit"
-                  
                   className="mt-5 rounded-lg bg-secondary-500 px-10 py-3 transition duration-500 hover:text-red-600"
                 >
-                  <a target="_blank" href="https://forms.gle/3hcsePc2qQuH4ZyZ8">Apply Now</a>
+                  <a target="_blank" href="https://forms.gle/XBxwPV4nyR8jU8Dt5">
+                    Apply Now
+                  </a>
                 </button>
               </div>
             </div>

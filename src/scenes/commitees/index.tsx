@@ -17,31 +17,31 @@ const benefits: Array<BenefitTypeWithLink> = [
     icon: <HomeModernIcon className="h-8 w-8" />,
     title: "Patron",
     description: "Meet the Patron of the UNIfied 2024",
-    link: "/comingsoon",
+    link: "/patron",
   },
   {
     icon: <UserGroupIcon className="h-8 w-8" />,
     title: "Conference Chair",
     description: "Meet the Conference Chair of the UNIfied 2024",
-    link: "/comingsoon",
+    link: "/conferencechair",
   },
   {
     icon: <UserGroupIcon className="h-8 w-8" />,
     title: "Conference Co-chairs",
     description: "Meet the Conference Co-chairs of the UNIfied 2024",
-    link: "/comingsoon",
+    link: "/conferencecochair",
   },
   {
     icon: <AcademicCapIcon className="h-8 w-8" />,
     title: "Advisory Committee",
     description: "Meet the Advisory Committee of the UNIfied 2024",
-    link: "/comingsoon",
+    link: "/advisorycommitee",
   },
   {
     icon: <BanknotesIcon className="h-8 w-8" />,
     title: "International Sponsors",
     description: "Meet the International Sponsors of the UNIfied 2024",
-    link: "/comingsoon",
+    link: "/sponsor",
   },
 ];
 
