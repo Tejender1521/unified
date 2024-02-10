@@ -15,10 +15,7 @@ import BenefitsPageGraphic from "@/assets/about.webp";
 
 const Registration = () => {
   return (
-    <section
-      id="registration"
-      className="mx-auto min-h-full w-5/6 py-20"
-    >
+    <section id="registration" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
       // onViewportEnter={() => setSelectedPage(SelectedPage.Welcome)}
       >
@@ -134,9 +131,10 @@ const Registration = () => {
                 <br />
                 ● International academicians - $350
                 <br />
-                ● Industry participants from India– Rs. 10000/-
+                ● In Hybrid Mode (Only for International Participants) - $100
                 <br />
-                ● Industry participants from outside India – $500
+                ● Industry participants from India– Rs. 10000/-
+                <br />● Industry participants from outside India – $500
               </p>
               {/* <p className="mb-5">
                 It is our pleasure to invite you to the conference to be held

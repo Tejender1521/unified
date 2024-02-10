@@ -18,8 +18,10 @@ import Commitees from './scenes/commitees';
 import Patron from './scenes/patron';
 import Conferencechair from './scenes/conferencechair';
 import Conferencecochair from './scenes/conferencecochair';
-import Advisorycommitee from './scenes/advisorycommitee';
+import LocalCommitee from "./scenes/localcommitee";
 import Sponsor from './scenes/sponsor';
+import Scientificcommitee from './scenes/scientificcommitee';
+import Keynote from './scenes/keynote';
 
 const router = createBrowserRouter([
   {
@@ -28,47 +30,61 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: [<Home/>,<Benefits/>,<Conferences/>,<Scope/>,<ContactUs/>]
+        element: [
+          <Home />,
+          <Benefits />,
+          <Conferences />,
+          <Scope />,
+          <ContactUs />,
+        ],
       },
       {
         path: "/visa",
-        element: <Visa/>
+        element: <Visa />,
       },
       {
         path: "/registration",
-        element: <Registration/>
+        element: <Registration />,
       },
       {
         path: "/commitees",
-        element: <Commitees/>
+        element: <Commitees />,
       },
       {
         path: "/comingsoon",
-        element: <Comingsoon/>
+        element: <Comingsoon />,
       },
       {
         path: "/patron",
-        element: <Patron/>
+        element: <Patron />,
       },
       {
         path: "/conferencechair",
-        element: <Conferencechair/>
+        element: <Conferencechair />,
       },
       {
         path: "/conferencecochair",
-        element: <Conferencecochair/>
+        element: <Conferencecochair />,
       },
       {
-        path: "/advisorycommitee",
-        element: <Advisorycommitee/>
+        path: "/organizingcommitee",
+        element: <LocalCommitee />,
       },
       {
         path: "/sponsor",
-        element: <Sponsor/>
-      }
-    ]
-  }
-])
+        element: <Sponsor />,
+      },
+      {
+        path: "/keynote",
+        element: <Keynote />,
+      },
+      {
+        path: "/scientificcommitee",
+        element: <Scientificcommitee />,
+      },
+    ],
+  },
+]);
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router}/>

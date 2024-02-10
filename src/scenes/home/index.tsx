@@ -22,18 +22,23 @@ const Home = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          
         }}
       >
-        
         <FadeIn delay={0.2} direction="down" padding fullWidth>
-          <h1 className="mt-[90px] max-w-[1050px] text-center text-3xl leading-tight z-10 text-white xs:text-[64px]">
+          <h1 className="z-10 mt-[90px] max-w-[1050px] text-center text-3xl leading-tight text-white xs:text-[64px]">
             The Unified International Conference on Emerging Technologies of
           </h1>
         </FadeIn>
         <FadeIn delay={0.4} direction="down" padding fullWidth>
-          <h5 className="mt-6 max-w-[500px] text-center text-lg z-10 text-white xs:text-2xl">
+          <h5 className="z-10 mt-6 max-w-[500px] text-center text-lg text-white xs:text-2xl">
             INTPART-UTFORSK Project, IncoME, TEPEN and DAMAS
+            <ul className='text-sm'>
+              <li>● 4/08/2024: Early registration deadline</li>
+              <li>● 7/09/2024: Full paper submission deadline.</li>
+              <li>● 6/10/2024: Paper acceptance notification</li>
+              <li>● 22/11/2024: Registration deadline</li>
+              <li>● 26-28/11/2024: Conference</li>
+            </ul>
           </h5>
         </FadeIn>
         {/* <FadeIn delay={0.2} direction="up" padding fullWidth>

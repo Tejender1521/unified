@@ -33,15 +33,15 @@ const benefits: Array<BenefitTypeWithLink> = [
   },
   {
     icon: <AcademicCapIcon className="h-8 w-8" />,
-    title: "Advisory Committee",
-    description: "Meet the Advisory Committee of the UNIfied 2024",
-    link: "/advisorycommitee",
+    title: "Local Organizing Committee",
+    description: "Meet the Organizing Committee of the UNIfied 2024",
+    link: "/organizingcommitee",
   },
   {
     icon: <BanknotesIcon className="h-8 w-8" />,
-    title: "International Sponsors",
-    description: "Meet the International Sponsors of the UNIfied 2024",
-    link: "/sponsor",
+    title: "Advisory & Scientific Committee",
+    description: "Meet the Advisory & Scientific Committee of the UNIfied 2024",
+    link: "/scientificcommitee",
   },
 ];
 

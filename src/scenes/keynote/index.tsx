@@ -1,47 +1,23 @@
-import ActionButton from "@/shared/ActionButton";
+
 import HText from "@/shared/HText";
-import { BenefitType, BenefitTypeWithLink, SelectedPage } from "@/shared/types";
+import { BenefitType, SelectedPage } from "@/shared/types";
 import {
-  UserIcon
+  HomeModernIcon,
+  UserGroupIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
-
-
-
-
-
-
-
-
-
+import BenefitsPageGraphic from "@/assets/about.webp";
 
 
 const benefits: Array<BenefitType> = [
   {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Anish Roy",
-    description: "Loughborough University, U.K.",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Andrew Ball",
-    description: "University of Huddersfield, U.K.",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. Gunjan Soni",
-    description: "Malaviya National Institute of Technology, Jaipur, India",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Huajiang Ouyang",
-    description: "University of Liverpool, U.K.",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Jyoti Sinha",
-    description: "University of Manchester, U.K.",
+    icon: <AcademicCapIcon className="h-6 w-6" />,
+    title:
+      "Safety and Security Challenges in Cyber-Processing Systems - Dr. Faisal Khan",
+    description:
+      "The automated processing systems are equipped with shared control systems with two intelligent decision-makers: humans and automated machines. The contradictory observations, states, goals, and actions may result in a conflict between these two decision-makers. The definitions, cause(s), and path(s) of such a conflict from a process safety perspective have not been explored and assessed. This work introduces an evolutionary framework that shows how a conflict can led to an accident... ",
   },
 ];
 
@@ -52,13 +28,14 @@ const container = {
   },
 };
 
+type Props = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
 
-
-const Conferencecochair = () => {
+const Keynote = () => {
   return (
-    <section id="Conferencecochair" className="mx-auto w-5/6 py-20">
+    <section id="conferences" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
-      // onViewportEnter={() => setSelectedPage(SelectedPage.Conferencecochair)}
       >
         {/* HEADER */}
         <motion.div
@@ -72,12 +49,12 @@ const Conferencecochair = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>Conference Co-Chairs</HText>
+          <HText>Keynotes</HText>
         </motion.div>
 
         {/* BENEFITS */}
         <motion.div
-          className="mt-5 items-center justify-between gap-6 md:flex text-sm"
+          className="mt-5 items-center justify-between gap-8 md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -89,14 +66,14 @@ const Conferencecochair = () => {
               icon={benefit.icon}
               title={benefit.title}
               description={benefit.description}
-              // link={benefit.link}
             />
           ))}
         </motion.div>
+
 
       </motion.div>
     </section>
   );
 };
 
-export default Conferencecochair;
+export default Keynote;

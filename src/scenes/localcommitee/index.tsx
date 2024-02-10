@@ -9,39 +9,30 @@ import Benefit from "./Benefit";
 
 
 
-
-
-
-
-
-
-
-
 const benefits: Array<BenefitType> = [
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Anish Roy",
-    description: "Loughborough University, U.K.",
+    title: "Dr. Gunjan Soni, Organizing Secratary",
+    description:
+      "Department of Mechanical Engineering, Malaviya National Institute of Technology Jaipur-302017",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Andrew Ball",
-    description: "University of Huddersfield, U.K.",
+    title: "Dr. Nikhil Sharma, Organizing Secratary",
+    description:
+      "Department of Mechanical Engineering, Malaviya National Institute of Technology Jaipur-302017",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. Gunjan Soni",
-    description: "Malaviya National Institute of Technology, Jaipur, India",
+    title: "Dr. Naresh Raghuvanshi, Joint Secratary",
+    description:
+      "Department of Mechanical Engineering, Malaviya National Institute of Technology Jaipur-302017",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Huajiang Ouyang",
-    description: "University of Liverpool, U.K.",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Jyoti Sinha",
-    description: "University of Manchester, U.K.",
+    title: "Dr. Gulab Pamnani, Joint Secratary ",
+    description:
+      "Department of Mechanical Engineering, Malaviya National Institute of Technology Jaipur-302017",
   },
 ];
 
@@ -54,11 +45,11 @@ const container = {
 
 
 
-const Conferencecochair = () => {
+const LocalCommitee = () => {
   return (
-    <section id="Conferencecochair" className="mx-auto w-5/6 py-20">
+    <section id="LocalCommitee" className="mx-auto w-5/6 py-20">
       <motion.div
-      // onViewportEnter={() => setSelectedPage(SelectedPage.Conferencecochair)}
+      // onViewportEnter={() => setSelectedPage(SelectedPage.Patron)}
       >
         {/* HEADER */}
         <motion.div
@@ -72,12 +63,12 @@ const Conferencecochair = () => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <HText>Conference Co-Chairs</HText>
+          <HText>Local Organizing Committee</HText>
         </motion.div>
 
         {/* BENEFITS */}
         <motion.div
-          className="mt-5 items-center justify-between gap-6 md:flex text-sm"
+          className="mt-5 items-center justify-between gap-6 text-sm md:flex"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -93,10 +84,9 @@ const Conferencecochair = () => {
             />
           ))}
         </motion.div>
-
       </motion.div>
     </section>
   );
 };
 
-export default Conferencecochair;
+export default LocalCommitee;
