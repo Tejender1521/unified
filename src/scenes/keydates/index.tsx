@@ -13,12 +13,12 @@ import BenefitsPageGraphic from "@/assets/about.webp";
 
 
 
-const Registration = () => {
+const Keydates = () => {
   return (
     <section id="registration" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
-          {/* <div>
+          <div>
           
             <div className="relative">
               <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
@@ -33,7 +33,7 @@ const Registration = () => {
                   }}
                 >
                   <HText>
-                    <span className="text-primary-500">Registration</span>
+                    <span className="text-primary-500">Key Dates</span>
                   </HText>
                 </motion.div>
               </div>
@@ -60,17 +60,17 @@ const Registration = () => {
                 <br />
                 ● 6/08/2024: Paper acceptance notification
                 <br />
-                ● 22/10/2024: Registration deadline
+                ● 22/10/2024: Keydates deadline
                 <br />● 26-28/11/2024: Conference
               </p>
               
             </motion.div>
 
           
-          </div> */}
+          </div>
           {/* REGISTRATION FEES */}
-          <div>
-            {/* TITLE */}
+          {/* <div>
+            
             <div className="relative">
               <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
@@ -84,13 +84,12 @@ const Registration = () => {
                   }}
                 >
                   <HText>
-                    <span className="text-primary-500">Registration Fees</span>
+                    <span className="text-primary-500">Keydates Fees</span>
                   </HText>
                 </motion.div>
               </div>
             </div>
 
-            {/* DESCRIPT */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -116,26 +115,15 @@ const Registration = () => {
                 ● Industry participants from India– Rs. 10000/-
                 <br />● Industry participants from outside India – $500
               </p>
-              {/* <p className="mb-5">
-                It is our pleasure to invite you to the conference to be held
-                from 26th November to 28th November 2024 at the Malaviya
-                National Institute of Technology (MNIT), Jaipur, India.
-              </p> */}
+             
             </motion.div>
 
-            {/* BUTTON */}
-            <div className="relative mt-16">
-              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                {/* <button>
-                  Join Now
-                </button> */}
-              </div>
-            </div>
-          </div>
+            
+          </div> */}
         </div>
       </motion.div>
     </section>
   );
 };
 
-export default Registration;
+export default Keydates;

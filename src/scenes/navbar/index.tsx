@@ -40,11 +40,12 @@ const Navbar = () => {
                   /> */}
                   <Link to="/">Home</Link>
                   <Link to="/registration">Registration</Link>
+                  <Link to="/keydates">Key Dates</Link>
                   <Link to="/visa">Visa</Link>
-                  <Link to="/comingsoon">Submission</Link>
+                  <Link to="/submission">Submission</Link>
                   <Link to="/comingsoon">Programme</Link>
                   <Link to="/commitees">Commitees</Link>
-                  <Link to="/keynote">Keynotes</Link>
+                  {/* <Link to="/keynote">Keynotes</Link> */}
                   <Link to="/comingsoon">Awards</Link>
 
                   {/* <Link
@@ -107,11 +108,17 @@ const Navbar = () => {
             >
               Registration
             </Link>
+            <Link
+              to="/keydates"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Key Dates
+            </Link>
             <Link to="/visa" onClick={() => setIsMenuToggled(!isMenuToggled)}>
               Visa
             </Link>
             <Link
-              to="/comingsoon"
+              to="/submission"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               Submission
@@ -128,12 +135,12 @@ const Navbar = () => {
             >
               Commitees
             </Link>
-            <Link
+            {/* <Link
               to="/keynote"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
               Keynotes
-            </Link>
+            </Link> */}
             <Link
               to="/comingsoon"
               onClick={() => setIsMenuToggled(!isMenuToggled)}

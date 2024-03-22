@@ -22,6 +22,8 @@ import LocalCommitee from "./scenes/localcommitee";
 import Sponsor from './scenes/sponsor';
 import Scientificcommitee from './scenes/scientificcommitee';
 import Keynote from './scenes/keynote';
+import Submission from './scenes/submission';
+import Keydates from './scenes/keydates';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/visa",
         element: <Visa />,
+      },
+      {
+        path: "/keydates",
+        element: <Keydates/>,
       },
       {
         path: "/registration",
@@ -82,6 +88,10 @@ const router = createBrowserRouter([
         path: "/scientificcommitee",
         element: <Scientificcommitee />,
       },
+      {
+        path: "/submission",
+        element: <Submission/>,
+      }
     ],
   },
 ]);
