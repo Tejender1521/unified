@@ -39,13 +39,13 @@ const Navbar = () => {
                     setSelectedPage={setSelectedPage}
                   /> */}
                   <Link to="/">Home</Link>
+                  <Link to="/jaipur">About Jaipur</Link>
                   <Link to="/registration">Registration</Link>
                   <Link to="/keydates">Key Dates</Link>
                   <Link to="/visa">Visa</Link>
                   <Link to="/submission">Submission</Link>
                   <Link to="/comingsoon">Programme</Link>
                   <Link to="/commitees">Commitees</Link>
-                  {/* <Link to="/keynote">Keynotes</Link> */}
                   <Link to="/comingsoon">Awards</Link>
 
                   {/* <Link
@@ -101,6 +101,9 @@ const Navbar = () => {
           <div className="ml-[33%] flex flex-col gap-10 text-2xl">
             <Link to="/" onClick={() => setIsMenuToggled(!isMenuToggled)}>
               Home
+            </Link>
+            <Link to="/jaipur" onClick={() => setIsMenuToggled(!isMenuToggled)}>
+              About Jaipur
             </Link>
             <Link
               to="/registration"

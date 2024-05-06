@@ -12,6 +12,16 @@ import Benefit from "./Benefit";
 const benefits: Array<BenefitType> = [
   {
     icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof. Rakesh Jain, General Chair",
+    description: "Malaviya National Institute of Technology Jaipur-302017",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof. M.L. Mittal, General Chair",
+    description: "Malaviya National Institute of Technology Jaipur-302017",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
     title: "Dr. Gunjan Soni, Organizing Secratary",
     description:
       "Department of Mechanical Engineering, Malaviya National Institute of Technology Jaipur-302017",
@@ -42,8 +52,6 @@ const container = {
     transition: { staggerChildren: 0.2 },
   },
 };
-
-
 
 const LocalCommitee = () => {
   return (

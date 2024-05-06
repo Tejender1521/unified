@@ -29,6 +29,11 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr. Alok Kumar Verma",
+    description: "Agency for Science,Technology and Research, Singapore",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
     title: "Amiya Ranjan Mohanty",
     description: "IIT Kharagpur, India",
   },
@@ -36,6 +41,11 @@ const benefits: Array<BenefitType> = [
     icon: <UserIcon className="h-6 w-6" />,
     title: "Anil Kumar",
     description: "Wenzhou University, China",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Asoke K. Nandi",
+    description: "Brunel University London, UK",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -57,21 +67,10 @@ const benefits: Array<BenefitType> = [
     title: "Prof.	Filipe	Didelet",
     description: " Polytechnic Institute of Setubal, Portugal",
   },
-
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. Haraprasad Roy",
-    description: "NIT Rourkela, India",
-  },
   {
     icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. Jiawei	Xiang",
     description: "Wenzhou University, China",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. Jayanta Das",
-    description: "IIT Dhanbad (ISM), India",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -83,11 +82,7 @@ const benefits: Array<BenefitType> = [
     title: "Prof.	Khanindra	Pathak",
     description: "IIT Kharagpur, India",
   },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. L.A. Kumaraswamidhas",
-    description: "IIT Dhanbad (ISM), India",
-  },
+
   {
     icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. Lin	Jing",
@@ -163,26 +158,6 @@ const benefits: Array<BenefitType> = [
     icon: <UserIcon className="h-6 w-6" />,
     title: "Dr	Soumendu	Jana",
     description: "NAL, Bangluru, India",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. S.K. Tiwari",
-    description: "Dr B R Ambedkar NIT, Jalandhar, India ",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Santosha K. Dwivedy",
-    description: "IIT Guwahati, India",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Dr. Sanjoy Ghoshal",
-    description: "IIT Dhanbad (ISM), India",
-  },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Surjya Kanta Pal",
-    description: "IIT Kharagpur, India",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,

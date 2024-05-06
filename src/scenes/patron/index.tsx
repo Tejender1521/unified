@@ -16,12 +16,6 @@ const benefits: Array<BenefitType> = [
     description:
       "Director, Malaviya National Institute of Technology Jaipur, India",
   },
-  {
-    icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Rakesh Jain",
-    description:
-      "Dean, Malaviya National Institute of Technology Jaipur, India",
-  }
 ];
 
 const container = {
