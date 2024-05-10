@@ -7,7 +7,7 @@ import {
   AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import BenefitsPageGraphic from "@/assets/about.webp";
+import BenefitsPageGraphic from "@/assets/1.jpeg";
 // import Welcome from "./Welcome";
 
 const benefits: Array<BenefitType> = [

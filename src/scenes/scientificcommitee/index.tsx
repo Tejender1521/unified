@@ -6,11 +6,25 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
+
+
+
+
+
+
+
+
+
 const benefits: Array<BenefitType> = [
   {
     icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. C. 'Nat' Nataraj",
     description: "Villanova University, USA",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof. Arvind Keprate",
+    description: "Oslomet, Norway",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -54,8 +68,18 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr.Chetan Kulkarni",
+    description: "US - NASA Ames Research Center, USA",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
     title: "Prof.	David	Baglee",
     description: "University of Sunderland, UK",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr.Deepti Mishra",
+    description: "Norwegian University of Science and Technology",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -100,6 +124,11 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr.Monica Tanwar",
+    description: "IIT Jodhpur",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. Mayank 	Tiwari",
     description: "IIT Patna, India",
   },
@@ -115,8 +144,18 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr.Neeraj Goyal",
+    description: "IIT Kharagpur, India",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
     title: "Mr	N.S. 	Joshi",
     description: "Bhabha Atomic Research Centre, India",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof.OP Yadav",
+    description: "NCAT, USA",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -148,6 +187,11 @@ const benefits: Array<BenefitType> = [
     icon: <UserIcon className="h-6 w-6" />,
     title: "Dr.	Ravdeep	Kour",
     description: "Luleå University of Technology, Sweden",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Dr.Signe Riemer",
+    description: "Sorensen, SINTEF AS",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,

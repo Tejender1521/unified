@@ -20,13 +20,18 @@ import Benefit from "./Benefit";
 const benefits: Array<BenefitType> = [
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Anish Roy",
-    description: "Loughborough University, U.K.",
+    title: "Prof. Andrew Ball",
+    description: "University of Huddersfield, U.K.",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
-    title: "Prof. Andrew Ball",
-    description: "University of Huddersfield, U.K.",
+    title: "Prof. Carol Featherston",
+    description: "Cardiff University, U.K.",
+  },
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof. Fengshou Gu",
+    description: "University of Liverpool, U.K.",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,

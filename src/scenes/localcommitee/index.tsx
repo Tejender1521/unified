@@ -88,7 +88,6 @@ const LocalCommitee = () => {
               icon={benefit.icon}
               title={benefit.title}
               description={benefit.description}
-              // link={benefit.link}
             />
           ))}
         </motion.div>

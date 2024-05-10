@@ -1,7 +1,7 @@
 
 import HText from "@/shared/HText";
 import { motion } from "framer-motion";
-import scope from "../../assets/scope.webp";
+import scope from "../../assets/2.jpeg";
 
 
 
