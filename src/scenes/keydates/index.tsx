@@ -19,7 +19,6 @@ const Keydates = () => {
       <motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           <div>
-          
             <div className="relative">
               <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
@@ -38,7 +37,6 @@ const Keydates = () => {
                 </motion.div>
               </div>
             </div>
-
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -52,19 +50,17 @@ const Keydates = () => {
               <p className="my-5">
                 Abstract acceptance notification. Two weeks after submission
                 <br />
-                ● 30/05/24: Abstract submission deadline
+                ● 30/06/24: Abstract submission deadline
                 <br />
-                ● 15/06/2024: Full paper submission deadline.
+                ● 15/07/2024: Full paper submission deadline.
                 <br />
-                ● 06/07/2024: Paper acceptance notification
+                ● 15/08/2024: Paper acceptance notification
                 <br />
-                ● 15/07/2024: Early registration deadline
+                ● 20/08/2024: Early registration deadline
                 <br />● 26-28/11/2024: Conference
               </p>
-              
             </motion.div>
-
-          
+       
           </div>
           {/* REGISTRATION FEES */}
           {/* <div>

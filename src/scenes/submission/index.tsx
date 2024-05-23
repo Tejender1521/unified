@@ -12,8 +12,9 @@ import BenefitsPageGraphic from "@/assets/about.webp";
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
-    title: "Log in to EasyChair for UNIfied 2024",
-    description: "Please use following link to submit abstract/ full paper:",
+    title: "Send your submission on 'unified2024@mnit.ac.in'",
+    description:
+      "The full paper should be formatted as per guidelines given in https://link.springer.com/book/9783031494123",
   },
 ];
 

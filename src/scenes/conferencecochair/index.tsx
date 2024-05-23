@@ -31,7 +31,7 @@ const benefits: Array<BenefitType> = [
   {
     icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. Fengshou Gu",
-    description: "University of Liverpool, U.K.",
+    description: "University of Huddersfield, U.K",
   },
   {
     icon: <UserIcon className="h-6 w-6" />,
@@ -83,10 +83,10 @@ const Conferencecochair = () => {
         {/* BENEFITS */}
         <motion.div
           className="mt-5 items-center justify-between gap-6 md:flex text-sm"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          variants={container}
+          // initial="hidden"
+          // whileInView="visible"
+          // viewport={{ once: true, amount: 0.5 }}
+          // variants={container}
         >
           {benefits.map((benefit: BenefitType) => (
             <Benefit
