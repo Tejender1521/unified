@@ -103,34 +103,61 @@ const Registration = () => {
             >
               <p className="my-5">
                 <br />
-                ● Indian research scholars – Rs. 4000/-
-                <br />
-                ● International research scholars - $200
-                <br />
-                ● Indian academicians – Rs. 7000/-
-                <br />
-                ● International academicians - $350
-                <br />
-                ● In Hybrid Mode (Only for International Participants) - $100
-                <br />
-                ● Industry participants from India– Rs. 10000/-
-                <br />● Industry participants from outside India – $500
+                ● Indian research scholars (Early bird)– Rs. 4000/-
+                <br />● Indian research scholars (after 20/08/24)– Rs. 4700/-{" "}
+                <br />● International research scholars (Early bird)- $200{" "}
+                <br />● International research scholars (after 20/08/24)- $235{" "}
+                <br />● Indian academicians (Early bird)– Rs. 7000/- <br />●
+                Indian academicians (after 20/08/24) – Rs. 8200/- <br />●
+                International academicians (Early bird) - $350 <br />●
+                International academicians (after 20/08/24) - $410 <br />● In
+                Hybrid Mode (Only for International Participants -early bird) -
+                $100 <br />● In Hybrid Mode (Only for International Participants
+                -after 20/08/24) - $117 <br />● Industry participants from India
+                (Early bird)– Rs. 10,000/- <br />● Industry participants from
+                India (after 20/08/24)– Rs. 11,700/-
+                <br />● Industry participants from outside India (Early bird) –
+                $500 <br />● Industry participants from outside India (after
+                20/08/24) – $588
               </p>
-              {/* <p className="mb-5">
-                It is our pleasure to invite you to the conference to be held
-                from 26th November to 28th November 2024 at the Malaviya
-                National Institute of Technology (MNIT), Jaipur, India.
-              </p> */}
             </motion.div>
 
-            {/* BUTTON */}
-            <div className="relative mt-16">
-              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
-                {/* <button>
-                  Join Now
-                </button> */}
+            <div className="relative">
+              <div className="mt-8 before:absolute before:-top-20 before:-left-20 ">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <HText>
+                    <span className="text-primary-500">Bank Details</span>
+                  </HText>
+                </motion.div>
               </div>
             </div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <p className="my-5">
+                <br />●Bank Name:   ICICI Bank <br />●Account Number:   676801700388 <br />●Payee
+                Name:   Registrar (sponsored research), MNIT, Jaipur <br />●IFSC code: 
+                ICIC0006768 <br />●Branch address:  MREC Branch, Malaviya National
+                Insititute of Technology, Jaipur- 302017 <br />●MICR No.:  302229031
+                <br />●SWIFT/BIC:   ICICINBBNRI <br />●Country:    India
+              </p>
+            </motion.div>
           </div>
         </div>
       </motion.div>

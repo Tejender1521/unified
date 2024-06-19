@@ -25,6 +25,8 @@ import Keynote from './scenes/keynote';
 import Submission from './scenes/submission';
 import Keydates from './scenes/keydates';
 import Jaipur from './scenes/jaipur';
+import Sponsorship from './scenes/sponsorship';
+import Accomodation from './scenes/accomodation';
 
 const router = createBrowserRouter([
   {
@@ -47,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/keydates",
-        element: <Keydates/>,
+        element: <Keydates />,
       },
       {
         path: "/registration",
@@ -91,11 +93,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/submission",
-        element: <Submission/>,
+        element: <Submission />,
       },
       {
         path: "/jaipur",
-        element: <Jaipur/>,
+        element: <Jaipur />,
+      },
+      {
+        path: "/sponsorship",
+        element: <Sponsorship/>
+      },
+      {
+        path: "/accomodation",
+        element: <Accomodation/>
       }
     ],
   },

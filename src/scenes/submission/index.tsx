@@ -91,8 +91,8 @@ const Submission = () => {
                 <span>
                   <a
                     className="text-primary-500"
-                    download="splnproc1703.docm"
-                    href="/splnproc1703.docm"
+                    download="paper.doc"
+                    href="/paper.doc"
                   >
                     {" "}
                     Click here

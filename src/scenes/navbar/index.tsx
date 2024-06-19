@@ -46,7 +46,8 @@ const Navbar = () => {
                   <Link to="/submission">Submission</Link>
                   <Link to="/comingsoon">Programme</Link>
                   <Link to="/commitees">Commitees</Link>
-                  <Link to="/comingsoon">Awards</Link>
+                  <Link to="/sponsorship">Sponsorship</Link>
+                  <Link to="/accomodation">Accomodation & Travel</Link>
 
                   {/* <Link
                     page="Welcome"
@@ -145,10 +146,16 @@ const Navbar = () => {
               Keynotes
             </Link> */}
             <Link
-              to="/comingsoon"
+              to="/sponsorship"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              Awards
+              Sponsorship
+            </Link>
+            <Link
+              to="/accomodation"
+              onClick={() => setIsMenuToggled(!isMenuToggled)}
+            >
+              Accomodation & Travel
             </Link>
 
             {/* <Link
