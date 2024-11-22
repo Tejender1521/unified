@@ -50,17 +50,16 @@ const Keydates = () => {
               <p className="my-5">
                 Abstract acceptance notification. Two weeks after submission
                 <br />
-                ● 30/06/24: Abstract submission deadline
+                ● 31/08/2024: Early registration deadline.
                 <br />
-                ● 15/07/2024: Full paper submission deadline.
+                ● 31/09/2024: Full paper submission deadline.
                 <br />
-                ● 15/08/2024: Paper acceptance notification
+                ● Paper acceptance notification within 15 days of acceptance.
                 <br />
-                ● 20/08/2024: Early registration deadline
+                ● 31/10/2024: Final Registration deadline.
                 <br />● 26-28/11/2024: Conference
               </p>
             </motion.div>
-       
           </div>
           {/* REGISTRATION FEES */}
           {/* <div>

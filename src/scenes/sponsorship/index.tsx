@@ -9,7 +9,8 @@ import {
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/about.webp";
 // import Welcome from "./Welcome";
-
+import Img1 from "@/assets/citypalace.jpg";
+import Img2 from "@/assets/TCS.jpg"
 
 
 
@@ -20,6 +21,7 @@ const Sponsorship = () => {
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           <div>
             {/* TITLE */}
+
             <div className="relative">
               <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                 <motion.div
@@ -51,7 +53,6 @@ const Sponsorship = () => {
               }}
             >
               <p className="my-5">
-                
                 The organising committee offers opportunities for sponsorship to
                 advertise your company, products and services during the
                 conference. <br />
@@ -70,28 +71,77 @@ const Sponsorship = () => {
             </motion.div>
           </div>
         </div>
+        <motion.div>
+          <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+            {/* GRAPHIC */}
+            <img
+              className="mx-auto w-96 rounded-xl "
+              alt="benefits-page-graphic"
+              src={Img2}
+            />
+
+            {/* DESCRIPTION */}
+            <div>
+              {/* TITLE */}
+              <div className="relative">
+                <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+                  <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ duration: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0, x: 50 },
+                      visible: { opacity: 1, x: 0 },
+                    }}
+                  >
+                    <HText>
+                      <span className="text-primary-500">
+                        Sponsored By :: TCS Research
+                      </span>
+                    </HText>
+                  </motion.div>
+                </div>
+              </div>
+
+              {/* DESCRIPT */}
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: 50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <p className="my-5">
+                  TCS Research focuses at the intersection of computing and the
+                  physical, biological, behavioral, and mathematical sciences to
+                  build sustainable futures.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           <div>
             {/* TITLE */}
             <div className="relative">
-              
-                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, amount: 0.5 }}
-                  transition={{ duration: 0.5 }}
-                  variants={{
-                    hidden: { opacity: 0, x: 50 },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                >
-                  <HText>
-                    <span className="text-primary-500">
-                      Terms and Conditions
-                    </span>
-                  </HText>
-                </motion.div>
-              
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: 50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                <HText>
+                  <span className="text-primary-500">Terms and Conditions</span>
+                </HText>
+              </motion.div>
             </div>
 
             {/* DESCRIPT */}
@@ -106,7 +156,6 @@ const Sponsorship = () => {
               }}
             >
               <p className="my-5">
-                
                 (1) All sponsorships will be confirmed on first-come, first
                 served basis. <br />
                 (2) Upon confirmation, sponsorship is to be deposited in

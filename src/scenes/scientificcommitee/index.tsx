@@ -106,7 +106,11 @@ const benefits: Array<BenefitType> = [
     title: "Prof.	Khanindra	Pathak",
     description: "IIT Kharagpur, India",
   },
-
+  {
+    icon: <UserIcon className="h-6 w-6" />,
+    title: "Prof. Dr. Karsten Schmidt",
+    description: "Frankfurt University of Applied Sciences Nibelungenplatz, Frankfurt, Germany ",
+  },
   {
     icon: <UserIcon className="h-6 w-6" />,
     title: "Prof. Lin	Jing",

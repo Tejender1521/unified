@@ -27,6 +27,7 @@ import Keydates from './scenes/keydates';
 import Jaipur from './scenes/jaipur';
 import Sponsorship from './scenes/sponsorship';
 import Accomodation from './scenes/accomodation';
+import Programme from './scenes/programme';
 
 const router = createBrowserRouter([
   {
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
       {
         path: "/accomodation",
         element: <Accomodation/>
+      },
+      {
+        path: "/programme",
+        element: <Programme/>
       }
     ],
   },

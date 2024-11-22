@@ -70,9 +70,49 @@ const Registration = () => {
           </div> */}
           {/* REGISTRATION FEES */}
           <div>
+            <div className="relative">
+              <div className="mt-8 before:absolute before:-top-20 before:-left-20">
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: 50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  <HText>
+                    <span className="text-primary-500">Registration Fees</span>
+                  </HText>
+                </motion.div>
+              </div>
+            </div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.2, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <button
+                type="submit"
+                className="mt-5 rounded-lg bg-secondary-500 px-10 py-3 transition duration-500 hover:text-red-600"
+              >
+                <a
+                  target="_blank"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeasOB88k9sbpIUA-OPWdn4q5UvJ6h01OAIoYenLh2V7UMUZw/viewform"
+                >
+                  Registration Form
+                </a>
+              </button>
+            </motion.div>
             {/* TITLE */}
             <div className="relative">
-              <div className="mt-8 before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
+              <div className="mt-8 before:absolute before:-top-20 before:-left-20">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -151,11 +191,18 @@ const Registration = () => {
               }}
             >
               <p className="my-5">
-                <br />●Bank Name:   ICICI Bank <br />●Account Number:   676801700388 <br />●Payee
-                Name:   Registrar (sponsored research), MNIT, Jaipur <br />●IFSC code: 
-                ICIC0006768 <br />●Branch address:  MREC Branch, Malaviya National
-                Insititute of Technology, Jaipur- 302017 <br />●MICR No.:  302229031
-                <br />●SWIFT/BIC:   ICICINBBNRI <br />●Country:    India
+                <br />
+                ●Bank Name:   ICICI Bank <br />
+                ●Account Number:   676801700388 <br />
+                ●Payee Name:   Registrar (sponsored research), MNIT, Jaipur{" "}
+                <br />
+                ●IFSC code:  ICIC0006768 <br />
+                ●Branch address:  MREC Branch, Malaviya National Insititute of
+                Technology, Jaipur- 302017 <br />
+                ●MICR No.:  302229031
+                <br />
+                ●SWIFT/BIC:   ICICINBBNRI <br />
+                ●Country:    India
               </p>
             </motion.div>
           </div>
